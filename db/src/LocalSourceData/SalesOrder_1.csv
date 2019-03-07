@@ -1,0 +1,5 @@
+SalesOrderID;OrderDate;CustomerName;ProductName;OrderQuantity;Sales;Country
+1;13.10.2010;Muhammed MacIntyre;Eldon Base for stackable storage shelf, platinum;6;261.54;United States of America
+2;01.10.2012;Barry French;Cardinal Slant-D® Ring Binder, Heavy Gauge Vinyl;27;244.57;Brazil
+3;10.07.2011;Clay Rozendal;R380;30;4965.76;Brazil
+4;28.08.2010;Carlos Soltero;Holmes HEPA Air Purifier;19;394.27;United States of America

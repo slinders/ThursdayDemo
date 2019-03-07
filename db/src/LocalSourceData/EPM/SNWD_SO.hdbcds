@@ -1,0 +1,34 @@
+namespace "SourceData"."EPM";
+
+using "SourceData"."EPM"::SNWD_TEXT_KEY;
+using "SourceData"."EPM"::SNWD_BPA;
+using "SourceData"."EPM"::SNWD_AD;
+   entity "SNWD_SO" { 
+	   key "NODE_KEY":  Binary(16) not null;
+	   "SO_ID":  String(10);
+	   "CREATED_BY":  Binary(16);
+	   "CREATED_AT":  Decimal(21,7);
+	   "CHANGED_BY":  Binary(16);
+	   "CHANGED_AT":  Decimal(21,7);
+	   "CREATED_BY_BP":  String(1);
+	   "CHANGED_BY_BP":  String(1);
+	   "NOTE_GUID": Association to "SNWD_TEXT_KEY";
+	   "BUYER_GUID": Association to "SNWD_BPA";
+	   "CURRENCY_CODE":  String(5);
+	   "GROSS_AMOUNT":  Decimal(15,2);
+	   "NET_AMOUNT":  Decimal(15,2);
+	   "TAX_AMOUNT":  Decimal(15,2);
+	   "LIFECYCLE_STATUS":  String(1);
+	   "BILLING_STATUS":  String(1);
+	   "DELIVERY_STATUS":  String(1);
+	   "OP_ID":  String(35);
+	   "DATAAGING":  UTCDateTime;
+	   "DUMMY":  String(1);
+	   "OVERALL_STATUS":  String(1);
+	   "BUY_CONTACT_GUID":  Binary(16);
+	   "SHIP_TO_ADR_GUID": Association to "SNWD_AD";
+	   "BILL_TO_ADR_GUID": Association to "SNWD_AD";
+	   "PAYMENT_METHOD":  String(1);
+	   "PAYMENT_TERMS":  String(1); }
+	technical configuration {
+	    column  store; };

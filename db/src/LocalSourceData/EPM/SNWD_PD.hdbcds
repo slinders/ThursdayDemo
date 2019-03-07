@@ -1,0 +1,31 @@
+namespace "SourceData"."EPM";
+
+using "SourceData"."EPM"::SNWD_PD_CATGOS;
+using "SourceData"."EPM"::SNWD_TEXT_KEY;
+using "SourceData"."EPM"::SNWD_BPA;
+   entity "SNWD_PD" { 
+	   key "NODE_KEY":  Binary(16) not null;
+	   "TYPE_CODE":  String(2);
+	   "CATEGORY": Association to "SNWD_PD_CATGOS";
+	   "PRODUCT_ID":  String(10);
+	   "CREATED_BY":  Binary(16);
+	   "CREATED_AT":  Decimal(21,7);
+	   "CHANGED_BY":  Binary(16);
+	   "CHANGED_AT":  Decimal(21,7);
+	   "NAME_GUID": Association to "SNWD_TEXT_KEY";
+	   "DESC_GUID":  Binary(16);
+	   "SUPPLIER_GUID": Association to "SNWD_BPA";
+	   "TAX_TARIF_CODE":  DecimalFloat;
+	   "MEASURE_UNIT":  String(3);
+	   "WEIGHT_MEASURE":  Decimal(13,3);
+	   "WEIGHT_UNIT":  String(3);
+	   "CURRENCY_CODE":  String(5);
+	   "PRICE":  Decimal(15,2);
+	   "PRODUCT_PIC_URL":  String(255);
+	   "WIDTH":  Decimal(13,3);
+	   "DEPTH":  Decimal(13,3);
+	   "HEIGHT":  Decimal(13,3);
+	   "DIM_UNIT":  String(3);
+	   "DUMMY_FIELD_PD":  String(1); }
+	technical configuration {
+	    column  store; };

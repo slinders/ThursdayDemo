@@ -1,0 +1,22 @@
+namespace "SourceData"."EPM";
+
+using "SourceData"."EPM"::SNWD_AD;
+   entity "SNWD_BPA" { 
+	   key "NODE_KEY":  Binary(16) not null;
+	   "BP_ROLE":  String(3);
+	   "EMAIL_ADDRESS":  String(255);
+	   "PHONE_NUMBER":  String(30);
+	   "FAX_NUMBER":  String(30);
+	   "WEB_ADDRESS":  String(255);
+	   "ADDRESS_GUID": Association to "SNWD_AD";
+	   "BP_ID":  String(10) not null;
+	   "COMPANY_NAME":  String(80);
+	   "LEGAL_FORM":  String(10);
+	   "CREATED_BY":  Binary(16);
+	   "CREATED_AT":  Decimal(21,7);
+	   "CHANGED_BY":  Binary(16);
+	   "CHANGED_AT":  Decimal(21,7);
+	   "CURRENCY_CODE":  String(5);
+	   "DUMMY_FIELD_BPA":  String(1); }
+	technical configuration {
+	    column  store; };

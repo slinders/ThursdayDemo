@@ -1,0 +1,7 @@
+namespace "SourceData"."EPM";
+
+   entity "SNWD_PD_CATGOS" { 
+	   key "CATEGORY":  String(40) not null;
+	   "MAIN_CATEGORY":  String(40); }
+	technical configuration {
+	    column  store; };

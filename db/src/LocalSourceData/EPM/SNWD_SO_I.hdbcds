@@ -1,0 +1,21 @@
+namespace "SourceData"."EPM";
+
+using "SourceData"."EPM"::SNWD_SO;
+using "SourceData"."EPM"::SNWD_PD;
+using "SourceData"."EPM"::SNWD_TEXT_KEY;
+   entity "SNWD_SO_I" { 
+	   key "NODE_KEY":  Binary(16) not null;
+	   "PARENT_KEY": Association to "SNWD_SO" not null;
+	   "SO_ITEM_POS":  String(10);
+	   "PRODUCT_GUID": Association to "SNWD_PD" not null;
+	   "NOTE_GUID": Association to "SNWD_TEXT_KEY";
+	   "CURRENCY_CODE":  String(5);
+	   "GROSS_AMOUNT":  Decimal(15,2);
+	   "NET_AMOUNT":  Decimal(15,2);
+	   "TAX_AMOUNT":  Decimal(15,2);
+	   "ITEM_ATP_STATUS":  String(1);
+	   "OP_ITEM_POS":  String(10);
+	   "DATAAGING":  UTCDateTime;
+	   "DUMMY":  String(1); }
+	technical configuration {
+	    column  store; };

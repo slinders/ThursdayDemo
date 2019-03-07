@@ -1,0 +1,11 @@
+namespace "SourceData";
+
+entity SalesOrderHeader {
+    key SalesOrderID  : Integer     not null;
+        OrderDate     : UTCDateTime not null;
+        CustomerName  : String(100);
+        ProductName   : String(100);
+        OrderQuantity : Integer;
+        Sales         : Decimal(15, 2);
+        Country       : String(100);
+};

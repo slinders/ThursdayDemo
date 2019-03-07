@@ -1,0 +1,11 @@
+namespace "SourceData"."EPM";
+
+using "SourceData"."EPM"::SNWD_TEXT_KEY;
+   entity "SNWD_TEXTS" { 
+	   key "NODE_KEY":  Binary(16) not null;
+	   "PARENT_KEY": Association to "SNWD_TEXT_KEY";
+	   "LANGUAGE":  String(1);
+	   "TEXT":  String(255);
+	   "DATAAGING":  UTCDateTime; }
+	technical configuration {
+	    column  store; };

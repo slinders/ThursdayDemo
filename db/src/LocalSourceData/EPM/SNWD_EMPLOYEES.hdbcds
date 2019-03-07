@@ -1,0 +1,29 @@
+namespace "SourceData"."EPM";
+
+using "SourceData"."EPM"::SNWD_AD;
+   entity "SNWD_EMPLOYEES" { 
+	   key "NODE_KEY":  Binary(16) not null;
+	   "PARENT_KEY":  Binary(16);
+	   "EMPLOYEE_ID":  String(10);
+	   "FIRST_NAME":  String(40);
+	   "MIDDLE_NAME":  String(40);
+	   "LAST_NAME":  String(40);
+	   "INITIALS":  String(10);
+	   "SEX":  String(1);
+	   "LANGUAGE":  String(1);
+	   "PHONE_NUMBER":  String(30);
+	   "FAX_NUMBER":  String(30);
+	   "MOBILE_NUMBER":  String(30);
+	   "EMAIL_ADDRESS":  String(255);
+	   "LOGIN_NAME":  String(12);
+	   "PR_ADDRESS_GUID": Association to "SNWD_AD";
+	   "VAL_START_DATE":  String(8);
+	   "VAL_END_DATE":  String(8);
+	   "CURRENCY":  String(5);
+	   "SALARY_AMOUNT":  Decimal(15,2);
+	   "ACCOUNT_NUMBER":  String(10);
+	   "BANK_ID":  String(10);
+	   "BANK_NAME":  String(255);
+	   "EMPLOYEE_PIC_URL":  String(255); }
+	technical configuration {
+	    column  store; };

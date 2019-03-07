@@ -1,0 +1,12 @@
+namespace "SourceData"."EPM";
+
+using "SourceData"."EPM"::SNWD_SO_I;
+   entity "SNWD_SO_SL" { 
+	   key "NODE_KEY":  Binary(16) not null;
+	   "PARENT_KEY": Association to "SNWD_SO_I";
+	   "QUANTITY":  Decimal(13,3);
+	   "QUANTITY_UNIT":  String(3);
+	   "DELIVERY_DATE":  Decimal(21,7);
+	   "DATAAGING":  UTCDateTime; }
+	technical configuration {
+	    column  store; };
