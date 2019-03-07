@@ -2,10 +2,10 @@
   "format_version" : 1,
   "imports" : [
     {
-      "target_table" : "SourceData.EPM::SNWD_SO",
+      "target_table" : "LocalSourceData.EPM::SNWD_SO",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_so.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_so.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -14,10 +14,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_SO_I",
+      "target_table" : "LocalSourceData.EPM::SNWD_SO_I",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_so_i.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_so_i.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -26,10 +26,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_PD",
+      "target_table" : "LocalSourceData.EPM::SNWD_PD",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_pd.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_pd.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -38,10 +38,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_PD_CATGOS",
+      "target_table" : "LocalSourceData.EPM::SNWD_PD_CATGOS",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_pd_catgos.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_pd_catgos.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -50,10 +50,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_BPA",
+      "target_table" : "LocalSourceData.EPM::SNWD_BPA",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_bpa.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_bpa.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -62,10 +62,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_EMPLOYEES",
+      "target_table" : "LocalSourceData.EPM::SNWD_EMPLOYEES",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_employees.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_employees.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -74,10 +74,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_SO_SL",
+      "target_table" : "LocalSourceData.EPM::SNWD_SO_SL",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_so_sl.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_so_sl.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -86,10 +86,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_TEXT_KEY",
+      "target_table" : "LocalSourceData.EPM::SNWD_TEXT_KEY",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_text_key.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_text_key.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -98,10 +98,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_TEXTS",
+      "target_table" : "LocalSourceData.EPM::SNWD_TEXTS",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_texts.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_texts.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ",",
@@ -110,10 +110,10 @@
       }
     },
     {
-      "target_table" : "SourceData.EPM::SNWD_AD",
+      "target_table" : "LocalSourceData.EPM::SNWD_AD",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData.EPM::snwd_ad.csv",
+        "file_name" : "LocalSourceData.EPM::snwd_ad.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ";",

@@ -1,4 +1,4 @@
-namespace "SourceData"."EPM";
+namespace "LocalSourceData"."EPM";
 
    entity "SNWD_PD_CATGOS" { 
 	   key "CATEGORY":  String(40) not null;

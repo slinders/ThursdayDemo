@@ -1,6 +1,6 @@
-namespace "SourceData"."EPM";
+namespace "LocalSourceData"."EPM";
 
-using "SourceData"."EPM"::SNWD_SO_I;
+using "LocalSourceData"."EPM"::SNWD_SO_I;
    entity "SNWD_SO_SL" { 
 	   key "NODE_KEY":  Binary(16) not null;
 	   "PARENT_KEY": Association to "SNWD_SO_I";

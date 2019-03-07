@@ -1,4 +1,4 @@
-namespace "SourceData"."EPM";
+namespace "LocalSourceData"."EPM";
 
    entity "SNWD_AD" { 
 	   key "NODE_KEY":  Binary(16) not null;

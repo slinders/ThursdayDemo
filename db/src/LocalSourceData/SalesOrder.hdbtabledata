@@ -2,10 +2,10 @@
   "format_version" : 1,
   "imports" : [
     {
-      "target_table" : "SourceData::SalesOrderHeader",
+      "target_table" : "LocalSourceData::SalesOrderHeader",
       "source_data" : { 
         "data_type" : "CSV", 
-        "file_name" : "SourceData::SalesOrder_1.csv",
+        "file_name" : "LocalSourceData::SalesOrder_1.csv",
         "has_header" : true,
         "type_config" : {
           "delimiter" : ";",

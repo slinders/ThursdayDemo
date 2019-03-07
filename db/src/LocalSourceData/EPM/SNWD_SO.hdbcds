@@ -1,8 +1,8 @@
-namespace "SourceData"."EPM";
+namespace "LocalSourceData"."EPM";
 
-using "SourceData"."EPM"::SNWD_TEXT_KEY;
-using "SourceData"."EPM"::SNWD_BPA;
-using "SourceData"."EPM"::SNWD_AD;
+using "LocalSourceData"."EPM"::SNWD_TEXT_KEY;
+using "LocalSourceData"."EPM"::SNWD_BPA;
+using "LocalSourceData"."EPM"::SNWD_AD;
    entity "SNWD_SO" { 
 	   key "NODE_KEY":  Binary(16) not null;
 	   "SO_ID":  String(10);

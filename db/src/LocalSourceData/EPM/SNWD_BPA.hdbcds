@@ -1,6 +1,6 @@
-namespace "SourceData"."EPM";
+namespace "LocalSourceData"."EPM";
 
-using "SourceData"."EPM"::SNWD_AD;
+using "LocalSourceData"."EPM"::SNWD_AD;
    entity "SNWD_BPA" { 
 	   key "NODE_KEY":  Binary(16) not null;
 	   "BP_ROLE":  String(3);

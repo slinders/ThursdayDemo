@@ -1,4 +1,4 @@
-namespace "SourceData";
+namespace "LocalSourceData";
 
 entity SalesOrderHeader {
     key SalesOrderID  : Integer     not null;

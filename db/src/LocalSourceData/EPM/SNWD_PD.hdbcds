@@ -1,8 +1,8 @@
-namespace "SourceData"."EPM";
+namespace "LocalSourceData"."EPM";
 
-using "SourceData"."EPM"::SNWD_PD_CATGOS;
-using "SourceData"."EPM"::SNWD_TEXT_KEY;
-using "SourceData"."EPM"::SNWD_BPA;
+using "LocalSourceData"."EPM"::SNWD_PD_CATGOS;
+using "LocalSourceData"."EPM"::SNWD_TEXT_KEY;
+using "LocalSourceData"."EPM"::SNWD_BPA;
    entity "SNWD_PD" { 
 	   key "NODE_KEY":  Binary(16) not null;
 	   "TYPE_CODE":  String(2);
